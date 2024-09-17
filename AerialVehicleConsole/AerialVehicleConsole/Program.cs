@@ -1,21 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Console;
+﻿using OOPFlyingVehicle;
 
-
-namespace OOPFlyingVehicle
+namespace AerialVehicleConsole
 {
-    /*
-     * OPP 2 warmup project try to create the output below from the missing classes
-     * The full desired output file is in the project in a file named
-     * Output.txt
-     * Some changes to the output are OK but do your best to recreate it perfectly.
-     */
-
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -43,19 +30,19 @@ namespace OOPFlyingVehicle
                  * OOPFlyingVehicleMidterm.Airplane engine is not started
                  */
 
-                Console.WriteLine("\nAireplaneTakeOffTests..............................................................."); 
+                Console.WriteLine("\nAireplaneTakeOffTests...............................................................");
                 Console.WriteLine("\nCall ap.TakeOff():");
                 //Test take off should fail engine isn't started
                 Console.WriteLine(ap.TakeOff());  //Don't take off engine isn't started
-                                                  /* Output:
-                                                   * OOPFlyingVehicleMidterm.Airplane can't fly it's engine is not started.
-                                                   */
+                /* Output:
+                 * OOPFlyingVehicleMidterm.Airplane can't fly it's engine is not started.
+                 */
                 Console.WriteLine("\nCall ap.StartEngine():");
                 ap.StartEngine();
                 Console.WriteLine(ap.TakeOff());  //take off engine is started
-                                                  /* Output:
-                                                   * OOPFlyingVehicleMidterm.Airplane is flying
-                                                   */
+                /* Output:
+                 * OOPFlyingVehicleMidterm.Airplane is flying
+                 */
 
                 //Fly up
                 Console.WriteLine("\nFly up Tests...................................................................");
@@ -87,7 +74,7 @@ namespace OOPFlyingVehicle
                 ////ToyPlane class tests
                 //Console.Console.WriteLine("\nToyPlane.cs Tests.........................................................");
 
-                
+
                 //ToyPlane tp = new ToyPlane();
                 //Console.Console.WriteLine(tp.About());
                 ///*
@@ -126,7 +113,7 @@ namespace OOPFlyingVehicle
                 //*/
 
 
-                ReadKey();
+                Console.ReadKey();
             }
         }
     }
