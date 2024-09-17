@@ -1,0 +1,58 @@
+﻿Flying Vehicle Tester......................................................
+
+Airlplane.cs...............................................................
+This OOPFlyingVehicle.Airplane has a max altitude of 41000 ft.
+It's current altitude is 0 ft.
+OOPFlyingVehicle.Engine is not started.
+
+AireplaneTakeOffTests...............................................................
+
+Call ap.TakeOff():
+OOPFlyingVehicle.Airplane can't fly it's engine is not started.
+
+Call ap.StartEngine():
+OOPFlyingVehicle.Airplane is flying
+
+Fly up Tests...................................................................
+Call ap.FlyUp() fly to 1,000ft default
+This OOPFlyingVehicle.Airplane has a max altitude of 41000 ft.
+It's current altitude is 1000 ft.
+OOPFlyingVehicle.Engine is started.
+
+Call ap.FlyUp(44000) Fly up to 45,000ft:
+This OOPFlyingVehicle.Airplane has a max altitude of 41000 ft.
+It's current altitude is 1000 ft.
+OOPFlyingVehicle.Engine is started.
+
+Call ap.FlyUp(44000) Fly up another 40,000ft shouldn't work
+This OOPFlyingVehicle.Airplane has a max altitude of 41000 ft.
+It's current altitude is 41000 ft.
+OOPFlyingVehicle.Engine is started.
+
+Fly Down.................................................................
+Call ap.FlyDown(50000) Fly Down 50,000 ft
+This OOPFlyingVehicle.Airplane has a max altitude of 41000 ft.
+It's current altitude is 41000 ft.
+OOPFlyingVehicle.Engine is started.
+Call ap.FlyDown(ap.CurrentAltitude) this should land
+This OOPFlyingVehicle.Airplane has a max altitude of 41000 ft.
+It's current altitude is 0 ft.
+OOPFlyingVehicle.Engine is started.
+
+ToyPlane.cs Tests.........................................................
+This OOPFlyingVehicle.ToyPlane has a max altitude of 50 ft.
+It's current altitude is 0 ft.
+OOPFlyingVehicle.Engine is not started.
+It's not wound up.
+
+call tp.TakeOff() shoudn't take off
+OOPFlyingVehicle.ToyPlane can't take of it is not wound up. OOPFlyingVehicle.ToyPlane can't fly it's engine is not started.
+
+Call tp.StartEngine():
+Call tp.TakeOff():
+OOPFlyingVehicle.ToyPlane can't take of it is not wound up. OOPFlyingVehicle.ToyPlane can't fly it's engine is not started.
+
+Call tp.windUp():
+Call tp.StartEngine():
+Call tp.TakeOff():
+OOPFlyingVehicle.ToyPlane is flying

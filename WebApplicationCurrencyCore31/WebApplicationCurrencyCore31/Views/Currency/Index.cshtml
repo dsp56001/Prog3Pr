@@ -1,0 +1,33 @@
+﻿@model WebApplicationCurrencyCore31.ViewModels.RepoViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>CurrencyRepo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>Total Value</dt>
+        <dd>@Model.TotalValue</dd>
+    </dl>
+    <dl class="dl-horizontal">
+
+        <dt>Coin Count Value</dt>
+        
+            @foreach (var coin in Model.Coins)
+            {
+                <dd>@coin.Name @coin.MonetaryValue</dd>
+            }
+        
+        
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

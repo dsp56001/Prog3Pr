@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="ToyPlane's engine will not start unless it is wound up. &#xD;&#xA;&#xD;&#xA;ToyPlanes MaxAltitude is 50 ft">
+    <Position X="6.906" Y="6.708" Height="1.26" Width="2.158" />
+  </Comment>
+  <Comment CommentText="Airplanes MaxAltitude is 41,000 ft">
+    <Position X="5.961" Y="4.736" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="AerialVehicle will not take off unless it's engine is started.&#xD;&#xA;&#xD;&#xA;IsFlying should default to false and become try when the CurrentAltitude is 0 ft.&#xD;&#xA;&#xD;&#xA;Aerial Vehicle FlyUp flies up 1000ft each time is is called unless an addition parameter is specified.">
+    <Position X="9.024" Y="0.576" Height="2.062" Width="2.315" />
+  </Comment>
+  <Comment CommentText="Helicopter Max Altitude is  8000 ft">
+    <Position X="0.5" Y="4.708" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Airports can only be created if the have an airport code&#xD;&#xA;Landing AerialVehicles should FlyDown to the ground, set IsFlying to false and be added to the Airports Vehicles collection if the Airport is not full.">
+    <Position X="0.5" Y="3.438" Height="1.083" Width="2.867" />
+  </Comment>
+  <Comment CommentText="Drone Mat alt is&#xD;&#xA;500ft">
+    <Position X="8.132" Y="5.681" Height="0.75" Width="1.207" />
+  </Comment>
+  <Class Name="OOPFlyingVehicle.ToyPlane">
+    <Position X="4.5" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAAIEAAAgAAAAAAAAAAAAAACAEAAAAAAA=</HashCode>
+      <FileName>ToyPlane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPFlyingVehicle.AerialVehicle">
+    <Position X="4.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAIEAAIAAAAEAgAAIAAAAAAAAAEAABAAAQAAIAAA=</HashCode>
+      <FileName>AerialVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPFlyingVehicle.Engine">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAEAAAAAAAAAAABAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPFlyingVehicle.Airport">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAAAAAAAAAAAACAAAAACAgAAAAAAAAA=</HashCode>
+      <FileName>Airport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPFlyingVehicle.Helicopter">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helicopter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPFlyingVehicle.Airplane">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Airplane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPFlyingVehicle.Drone" Collapsed="true">
+    <Position X="8" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

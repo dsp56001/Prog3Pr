@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfAppDogBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDogBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label>Name</Label>
+                <TextBox x:Name="tbDogName" Text="{Binding Path=Name }"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Age</Label>
+                <TextBlock x:Name="tbDogAge" Text="{Binding Path=Age }"></TextBlock>
+                <Separator Margin="10"></Separator>
+                <Button x:Name="btnHappyBirthday" Command="{Binding HappyBirthdayCommand}" >Happy Birthday</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Weight</Label>
+                <TextBlock x:Name="tbDogWeight" Text="{Binding Path=Weight }"></TextBlock>
+                <Slider x:Name ="slWeight" Width="120" Value="{Binding Path=Weight}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="tbAbout" TextWrapping="Wrap" 
+                         Text ="{Binding Path = AboutString, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"  />
+                
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
