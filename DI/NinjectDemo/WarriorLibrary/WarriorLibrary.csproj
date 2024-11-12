@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>WarriorLibrary</AssemblyTitle>
+    <Product>WarriorLibrary</Product>
+    <Copyright>Copyright ©  2017</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\NinjectDemo\IWeapon.cs">
+      <Link>IWeapon.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\Katana.cs">
+      <Link>Katana.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\Ninja.cs">
+      <Link>Ninja.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\NinjectModules\WarriorModule.cs">
+      <Link>NinjectModules\WarriorModule.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\Samurai.cs">
+      <Link>Samurai.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\Sword.cs">
+      <Link>Sword.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\UnityContainers\UnityBootstrap.cs">
+      <Link>UnityContainers\UnityBootstrap.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\Warrior.cs">
+      <Link>Warrior.cs</Link>
+    </Compile>
+    <Compile Include="..\NinjectDemo\Weapon.cs">
+      <Link>Weapon.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="Unity" Version="5.10.3" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MSEDI\WarriorService.cs" />
+  </ItemGroup>
+</Project>

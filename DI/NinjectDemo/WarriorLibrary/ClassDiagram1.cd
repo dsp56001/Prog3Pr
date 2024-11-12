@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="NinjectDemo.Katana">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\Katana.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NinjectDemo.Sword">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\Sword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NinjectDemo.Warrior">
+    <Position X="1.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACIAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NinjectDemo.Weapon">
+    <Position X="6.5" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\Weapon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NinjectDemo.Ninja">
+    <Position X="3.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\Ninja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NinjectDemo.Samurai">
+    <Position X="0.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\Samurai.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NinjectDemo.IWeapon">
+    <Position X="4.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\JeffMeyers\Documents\GitHub\OOP2Class\DI\NinjectDemo\NinjectDemo\IWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
