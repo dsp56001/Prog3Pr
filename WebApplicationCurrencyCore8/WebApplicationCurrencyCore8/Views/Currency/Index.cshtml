@@ -1,0 +1,51 @@
+﻿@model WebApplicationCurrencyCore8.ViewModels.CurrencyRepoViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+    <h4>CurrencyRepo</h4>
+    <hr />
+    <form method="get">
+
+
+        <dl>
+            <dt> Populating With ViewData Data </dt>
+            <dd>
+                @Html.DropDownList("Locale", (IEnumerable
+                         <SelectListItem>)Model.LocalizationSelectList)
+
+            </dd>
+            <dd>
+                <button class="btn btn-default">Change Locale</button>
+            </dd>
+        </dl>
+
+    </form>
+
+    <dl class="dl-horizontal">
+
+        <dt>Total Value</dt>
+        <dd>@Model.TotalValue</dd>
+    </dl>
+
+
+    <dl class="dl-horizontal">
+
+        <dt>Coin Count Value</dt>
+
+        @foreach (var coin in Model.Coins)
+        {
+            <dd>@coin.Name @coin.MonetaryValue</dd>
+        }
+
+
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

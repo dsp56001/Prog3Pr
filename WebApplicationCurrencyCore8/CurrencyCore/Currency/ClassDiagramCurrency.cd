@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Currency.CurrencyRepo">
+    <Position X="2" Y="4" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAEAAAAADEAAAgAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>CurrencyRepo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Currency.Coin">
+    <Position X="7.5" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAEAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Coin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Currency.ICoin">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICoin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Currency.ICurrency">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ICurency.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Currency.ICurrencyRepo">
+    <Position X="2" Y="1" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAEAAAAACEAAAgAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>ICurrencyRepo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Currency.IBankNote">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBankNote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
