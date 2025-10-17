@@ -42,7 +42,7 @@ namespace UnitTestFlyingVehicle
             orginalCount = apORD.Vehicles.Count;
             apORD.Land(plane);
             //Assert
-            Assert.AreEqual(orginalCount + 1, apORD.Vehicles.Count);
+            Assert.HasCount(orginalCount + 1, apORD.Vehicles);
         }
 
         [TestMethod]
@@ -64,7 +64,7 @@ namespace UnitTestFlyingVehicle
             }
             apORD.Land(planes.ToList());
             //Assert
-            Assert.AreEqual(orginalCount + MaxVehicles, apORD.Vehicles.Count);
+            Assert.HasCount(orginalCount + MaxVehicles, apORD.Vehicles);
         }
 
         [TestMethod]
@@ -86,7 +86,7 @@ namespace UnitTestFlyingVehicle
             }
             apORD.Land(planes.ToList());
             //Assert
-            Assert.AreEqual(apORD.MaxVehicles, apORD.Vehicles.Count);
+            Assert.HasCount(apORD.MaxVehicles, apORD.Vehicles);
         }
 
         [TestMethod]

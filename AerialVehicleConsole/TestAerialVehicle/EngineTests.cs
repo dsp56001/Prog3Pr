@@ -19,9 +19,9 @@ namespace UnitTestFlyingVehicle
             e.Stop();
             bool stopEngineStarted = e.IsStarted;
             //Assert
-            Assert.AreEqual(defaultEngineStarted, false);
-            Assert.AreEqual(startEngineStarted, true);
-            Assert.AreEqual(stopEngineStarted, false);
+            Assert.IsFalse(defaultEngineStarted);
+            Assert.IsTrue(startEngineStarted);
+            Assert.IsFalse(stopEngineStarted);
         }
 
         [TestMethod]

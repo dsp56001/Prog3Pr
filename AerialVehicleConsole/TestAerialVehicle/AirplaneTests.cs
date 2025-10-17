@@ -58,8 +58,8 @@ namespace UnitTestFlyingVehicle
             //Assert
             Assert.AreEqual(firstTakeoff, ap.ToString() + " can't fly it's engine is not started.");
             Assert.AreEqual(secondTakeOff, ap.ToString() + " is flying");
-            Assert.AreEqual(engineBeforeStart, false);
-            Assert.AreEqual(ap.Engine.IsStarted, true);
+            Assert.IsFalse(engineBeforeStart);
+            Assert.IsTrue(ap.Engine.IsStarted);
         }
 
         [TestMethod]
@@ -77,9 +77,9 @@ namespace UnitTestFlyingVehicle
             ap.FlyUp(40000);
             int secondAlt = ap.CurrentAltitude;
             //Assert
-            Assert.AreEqual(defaultHeight, 0);
-            Assert.AreEqual(firstAlt, 1000);
-            Assert.AreEqual(secondAlt, 41000);
+            Assert.AreEqual(0, defaultHeight);
+            Assert.AreEqual(1000,firstAlt);
+            Assert.AreEqual(41000,secondAlt);
 
         }
 
@@ -106,10 +106,10 @@ namespace UnitTestFlyingVehicle
             int FlyDownOneAtTwo = ap.CurrentAltitude;
 
             //Assert
-            Assert.AreEqual(defaultHeight, 0);
-            Assert.AreEqual(FlyDown, 0);
+            Assert.AreEqual(0, defaultHeight);
+            Assert.AreEqual(0, FlyDown);
             //Assert.AreEqual(FlyDownOneAlreadyZero, 0);
-            Assert.AreEqual(FlyDownOneAtTwo, 1);
+            Assert.AreEqual(1, FlyDownOneAtTwo);
 
 
         }

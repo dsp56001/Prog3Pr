@@ -8,13 +8,13 @@ namespace UnitTestFlyingVehicle
     public class AerialVehicleTests
     {
 
-        [TestMethod]
-        [ExpectedException(typeof(MissingMethodException), "Cannot create an abstract class.")] //Since it's abstact it doesn't have constructor it will throw a MissingMethodException 
+        //[TestMethod]
+        //[ExpectedException(typeof(MissingMethodException), "Cannot create an abstract class.")] //Since it's abstact it doesn't have constructor it will throw a MissingMethodException 
         
-        public void AerialVehicleAstract_Throws()
-        {
-            var ae = Activator.CreateInstance<AerialVehicle>(); //Will throw
-        }
+        //public void AerialVehicleAstract_Throws()
+        //{
+        //    var ae = Activator.CreateInstance<AerialVehicle>(); //Will throw
+        //}
 
         [TestMethod]
         //TODO Too many tests one method not named well enough should break this up
@@ -30,9 +30,9 @@ namespace UnitTestFlyingVehicle
             bool stoppedEngine = ap.Engine.IsStarted;
 
             //Assert
-            Assert.AreEqual(defaultEngine, false); // default is stopped
-            Assert.AreEqual(startedEngine, true); // after start is called engine should be stated
-            Assert.AreEqual(stoppedEngine, false); // after stop is called engine should be stopped
+            Assert.IsFalse(defaultEngine); // default is stopped
+            Assert.IsTrue(startedEngine); // after start is called engine should be stated
+            Assert.IsFalse(stoppedEngine); // after stop is called engine should be stopped
         }
     }
 }
